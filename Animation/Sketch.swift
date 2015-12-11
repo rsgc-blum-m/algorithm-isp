@@ -22,7 +22,7 @@ class Sketch {
     init() {
         
         // Create canvas object – specify size
-        canvas = Canvas(width: 800, height: 700)
+        canvas = Canvas(width: 700, height: 100)
         
         // The frame rate can be adjusted; the default is 60 fps
         canvas.framesPerSecond = 60
@@ -42,13 +42,13 @@ class Sketch {
         
         // Clear the background
         canvas.drawShapesWithBorders = false
-        canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 5)
+        canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
         canvas.drawRectangle(bottomRightX: 0, bottomRightY: 0, width: canvas.width, height: canvas.height)
         
         // Draw a circle that moves across the screen
         canvas.drawShapesWithBorders = false
         canvas.fillColor = Color(hue: Float(canvas.frameCount), saturation: 80, brightness: 90, alpha: 100)
-        canvas.drawEllipse(centreX: x, centreY: canvas.height / 2, width: 500, height: 500)
+        canvas.drawEllipse(centreX: x, centreY: canvas.height / 2, width: 25, height: 25)
         
     }
     
